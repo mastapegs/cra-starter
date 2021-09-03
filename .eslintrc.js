@@ -20,6 +20,8 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint", "jest", "prettier"],
   rules: {
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
     "import/extensions": [
       "error",
       "ignorePackages",
