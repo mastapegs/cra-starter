@@ -1,10 +1,11 @@
 import { FC } from "react";
+import Background from "../Background";
 
 const App: FC = () => {
   return (
-    <div className="bg-gray-50 p-4 min-h-screen">
+    <Background>
       <h1>CRA Starter</h1>
-    </div>
+    </Background>
   );
 };
 
