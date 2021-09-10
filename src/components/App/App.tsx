@@ -1,10 +1,13 @@
 import { FC } from "react";
 import Background from "../Background";
+import Paper from "../Paper";
 
 const App: FC = () => {
   return (
     <Background>
-      <h1>CRA Starter</h1>
+      <Paper>
+        <h1>CRA Starter</h1>
+      </Paper>
     </Background>
   );
 };
