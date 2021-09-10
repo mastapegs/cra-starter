@@ -1,8 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
+import data from "./data.json";
 
-test("renders learn react link", () => {
+it("renders h1 text from data file", () => {
   render(<App />);
-  const linkElement = screen.getByText(/CRA Starter/i);
-  expect(linkElement).toBeInTheDocument();
+  const regex = new RegExp(data.h1, "i");
+  const h1Element = screen.getByText(regex);
+  expect(h1Element).toBeInTheDocument();
 });
